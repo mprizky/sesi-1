@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <h1>Membuat Tabel</h1>
+
+    <h2>Daftar Nama Pemain Timnas</h2>
+
+    <!-- 
+        tr  ==> membuat baris   ==> ke bawah
+        td  ==> membuat kolom   ==> samping kanan
+        th  ==> membuat tulisan cetak tebal dan rata tengah     ==> digunakan untuk judul kolom
+
+        attribute th / td:
+        - colspan   ==> menggabung kolom
+        - rowspan   ==> menggabung baris
+
+     -->
+
+    <table border="1" cellspacing="0" cellpadding="5">
+        <!-- <tr> membuat baris pertama
+            <td>No.</td>
+            <td><b><center>Nama</center></b></td>
+            <td align="center"><b>Alamat</b></td>
+        </tr> -->
+        <tr> <!-- membuat baris pertama -->
+            <th rowspan="2">No.</th>
+            <th colspan="2">Nama</th>
+            <th rowspan="2">Alamat</th>
+        </tr>
+        <tr>
+            <th>Depan</th>
+            <th>Belakang</th>
+        </tr>
+        <tr> <!-- membuat baris kedua -->
+            <td>1</td>
+            <td>Jay</td>
+            <td>Idzes</td>
+            <td>Jonggol, Bogor</td>
+        </tr>
+        <tr> <!-- membuat baris ketiga -->
+            <td>2</td>
+            <td>Thom</td>
+            <td>Haye</td>
+            <td>Rancaekek, Bandung</td>
+        </tr>
+        <tr> <!-- membuat baris keempat -->
+            <td>3</td>
+            <td>Marselino</td>
+            <td>Ferdinan</td>
+            <td>Bendungan Hilir, Jakarta</td>
+        </tr>
+        
+    </table>
+
+
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>In Class Challenge</title>
+
+
+    <style>
+        body {
+        margin: 0;
+        padding: 0;
+        background: rgb(235, 233, 233);
+        }
+
+        .navbar {
+        background-color: white;
+        padding: 10px;
+        }
+
+        .navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: right;
+        }
+
+        .navbar li {
+        display:inline;
+        }
+
+        .navbar a {
+        color: black;
+        text-decoration: none;
+        padding: 10px 20px;
+        }
+
+        .navbar a:hover {
+        background-color: #555;
+        color: white;
+        }
+
+        header {
+            display: flex;
+            /* justify-content: space-between; */
+            padding: 30px;
+            padding-right: 70px;
+            background-color: white;
+            margin: 20px;
+            gap: 70px;
+        }
+
+        #display-picture {
+            display: flex;
+        }
+
+        #nama-anda {
+            float: left;
+        }
+
+        #availibility {
+            float: left;
+            padding-top: 15px;
+            padding-left: 100px;
+        
+        }
+
+        .input {
+            width: 99%;
+        }
+
+        form {
+            padding: 0px;
+            margin: 20px;
+            background-color: white;
+        }
+
+        #btn-catch-1 {
+            background-color: blue;
+            color: white;
+            padding: 1em;
+            border: solid 1px;
+            cursor: pointer;
+            border-radius: 0.5em;
+        }
+
+        #btn-catch-2 {
+            color: black;
+            padding: 1em;
+            border: solid 1px green;
+            cursor: pointer;
+            border-radius: 0.5em;
+        }
+
+        #btn-catch-1:hover {
+            background: green;
+            color: white;
+
+        }
+
+        #btn-catch-2:hover {
+            background: greenyellow;
+            color: black;
+
+        }
+
+        img {
+            border-radius:50%;
+            padding: 10%
+        }
+
+        #submit {
+            border-color: greenyellow;
+            background: green;
+            color: white;
+            padding: 1em;
+            border: solid 1px green;
+            cursor: pointer;
+            border-radius: 0.5em;
+            width: 100%;
+        }
+
+        #submit:hover {
+            background: whitesmoke;
+            color: green;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 30%;
+        }
+
+        .cetak-tebal {
+            font-weight: bold;
+        }
+
+       
+
+        /* div {
+        padding: 5%;
+        }  */
+
+        /* .flex-container {
+        display: flex;
+        background-color: DodgerBlue;
+        }
+
+        .flex-container > div {
+        background-color: #f1f1f1;
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+        } */
+    </style>
+
+
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="home">HOME</a></li>
+            <li><a href="product">PRODUCT</a></li>
+            <li><a href="gallery">GALLERY</a></li>
+            <li><a href="blog">BLOG</a></li>
+            <li><a href="inventory">INVENTORY</a></li>
+        </ul>
+    </nav> <br><br>
+
+    <header>
+        <div id="display-picture">
+            <img src="assests/bahan/profile-picture.png" width="150px" alt="profile-picture">
+        </div>
+        <div id="nama-anda">
+            <h1>Nama Anda</h1>
+            <p>Front End Designer</p>
+            <p>Edit Resume</p> <br><br>
+            <button id="btn-catch-1">Kontak</button>
+            <button id="btn-catch-2">Resume</button>
+        </div>
+
+        <table>
+            <tr>
+                <td class="cetak-tebal">Availibility</td>
+                <td>Full time</td>
+            </tr>
+            <tr>
+                <td class="cetak-tebal">Usia</td>
+                <td>31 tahun</td>
+            </tr>
+            <tr>
+                <td class="cetak-tebal">Lokasi</td>
+                <td>Jakarta, Indonesia</td>
+            </tr>
+            <tr>
+                <td class="cetak-tebal">Pengalaman</td>
+                <td>2 tahun</td>
+            </tr>
+            <tr>
+                <td class="cetak-tebal">email</td>
+                <td>maulana.putrarizky@gmail.com</td>
+            </tr>
+        </table>
+
+
+        <!-- <div id="availibility">
+            <p>Availability : Full Time</p>
+            
+            <p>Usia : 19</p>
+            
+            <p>Lokasi  : Jakarta</p>
+           
+            <p>Pengalaman : 2 tahun</p>
+           
+            <p>Email : email@gmail.com</p>
+            
+        </div>  -->
+    </header>
+
+    <form class="form">
+        <label for="nama">Nama</label><br>
+        <input class="input" type="text" name="nama" value="masukkan nama anda"><br/>
+        <label for="role">Role</label><br>
+        <input class="input" type="text"><br>
+        <label for="availability">Availability</label><br>
+        <input class="input" type="text"><br>
+        <label for="usia">Usia</label><br>
+        <input class="input" type="text"><br>
+        <label for="lokasi">Lokasi</label><br>
+        <input class="input" type="text"><br>
+        <label for="years experience">Years Experience</label><br>
+        <input class="input" type="text"><br>
+        <label for="email">Email</label><br>
+        <input class="input" type="text"><br><br><br>
+        <button id="submit">SUBMIT</button>
+        
+   
+    </form>
+
+    
+    
+</body>
+</html>

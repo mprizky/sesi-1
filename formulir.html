@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir</title>
+</head>
+<body>
+    <h1>Formulir Pendaftaran Calon Hokage</h1>
+    
+    <form methode="POST">
+        <label for="nama">Nama:</label>
+    <input type="text" id="nama"/> <br><br>
+
+    <label for="tanggal_lahir">Tanggal Lahir:</label>
+    <input type="date" id="tanggal_lahir"/> <br><br>
+
+    <label for="alamat" style="vertical-align: top;">Alamat:</label>
+    <textarea name="alamat" id="alamat"  cols="30" rows="10"></textarea> <br><br>
+
+    <!-- untuk input name dan input id bebas yang mana duluan, hasilnya akan sama -->
+    <label for="jenis_kelamin">Jenis Kelamin: </label>
+    <input type="radio" name="jenis_kelamin" id="laki_laki" /> Laki-Laki 
+    <input name="jenis_kelamin" type="radio" id="perempuan" /> Perempuan <br/><br/>
+
+    <label for="skill">Skill: </label>
+    <input type="checkbox" name="skill[]" id="ninjutsu" /> Ninjutsu 
+    <input type="checkbox" name="skill[]" id="taijutsu" /> Taijutsu 
+    <input type="checkbox" name="skill[]" id="kenjutsu" /> Kenjutsu <input type="checkbox" name="skill[]" id="kuchiyose" /> Kuchiyose <br/><br/>
+
+    <label for="kebangsaan">Kebangsaan: </label>
+    <select name="kebangsaan" id="kebangsaan">
+        <option value="" disabled selected>- Pilih Desa Asal -</option>
+        <option value="Konohagakure">Konohagakure</option>
+        <option value="Tsunagakure">Tsunagakure</option>
+        <option value="Mizugakure">Mizugakure</option>
+        <option value="Indonesiagakure">Indonesiagakure</option>
+    </select>
+    <br><br>
+
+    <label for="ekspektasi_gaji">Ekspektasi Gaji: </label>
+    <input type="number" id="ekspektasi_gaji"><br><br>
+
+    <label for="email">E-Mail: </label>
+    <input type="email" id="email"><br><br>
+
+    <label for="password">Password: </label>
+    <input type="password" id="password"><br><br>
+
+    <label for="foto_profil">Foto Profil:</label>
+    <input type="file" id="foto_profil" accept="image/*"><br><br>
+
+    <label for="warna_favorit">Warna Favorit: </label>
+    <input type="color" id="warna_favorit"><br><br>
+
+    <input type="submit" value="Simpan" />
+        <input type="reset" value="Reset" />
+    </form>
+
+    
+
+
+</body>
+</html>
